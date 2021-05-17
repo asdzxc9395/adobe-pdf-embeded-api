@@ -34,7 +34,7 @@ const app = new Vue({
           metaData: { fileName: files[0].name }
         });
       };
-      reader.readAsArrayBuffer(files[0]);
+      reader.readAsArrayBuffer(files[0]); 
  
     }
   },
@@ -89,3 +89,4 @@ var list_of_annotations = "json형식"
 3. 보통 PDF API를 자체적으로 주석을 수정, 변경할 수 있으나, 사용용도에 따라 주석데이터를 양식에 맞게 커스터마이징함(SampleImage 참고)
 - 데이터 테이블 <===> PDF Annotation primary key으로 연결
 - 비동기로 삭제, 등록, 수정 가능
+
